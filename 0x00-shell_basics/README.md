@@ -1,2 +1,1 @@
-#!/bin/bash
-Creating bash
+Creating files on bash
