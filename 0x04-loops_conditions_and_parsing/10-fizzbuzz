@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
-#FizzBuzz
-
-for (( i=1; i<101; i++ ))
-    do
-    if [ $(( i % 15)) -eq 0 ]
-    then
-	echo "FizzBuzz"
-    elif [ $(( i % 3 )) -eq 0 ]
-    then
-	echo "Fizz"
-    elif [ $(( i % 5 )) -eq 0 ]
-    then
-	echo "Buzz"
-    else
-	echo "$i"
-    fi
+num=1
+while [ $num -le 100 ]
+do
+	if [ $((num % 15)) -eq 0 ]
+	then
+		echo "FizzBuzz"
+	elif [ $((num % 5)) -eq 0 ]
+	then
+		echo "Buzz"
+	elif [ $((num % 3)) -eq 0 ]
+	then
+		echo "Fizz"
+	else
+		echo $num
+	fi
+	num=$((num + 1))
 done
